@@ -1,0 +1,14 @@
+{
+  "note": "Monthly AI API budgets per team (USD, modeled production scale). Month-to-date includes reconciled spend found on the provider bill. Policies: alert-only never blocks (guest-facing); degrade lowers effort on that team's routes; block returns 429 budget_exceeded.",
+  "warnAt": 0.8,
+  "teams": {
+    "team-guest-ai": { "monthlyUsd": 7000, "onExceeded": "alert-only", "owner": "team-guest-ai lead", "why": "guest-facing: availability beats budget; page the owner instead" },
+    "team-platform": { "monthlyUsd": 420, "onExceeded": "degrade", "owner": "platform lead", "why": "factory + CI evals: drop to low effort, keep shipping" },
+    "team-finops": { "monthlyUsd": 60, "onExceeded": "block", "owner": "finops lead", "why": "advisor + shadow evals are deferrable" },
+    "team-data": { "monthlyUsd": 200, "onExceeded": "block", "owner": "data lead", "why": "batch analytics are deferrable" }
+  },
+  "apiKeyOwners": {
+    "apikey_gateway_prod": "llm-gateway (all teams, tagged per call)",
+    "apikey_ds_review_notebook": "team-data"
+  }
+}

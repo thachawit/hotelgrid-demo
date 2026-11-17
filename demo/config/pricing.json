@@ -1,0 +1,33 @@
+{
+  "currency": "USD",
+  "source": "Anthropic first-party list prices from the claude-api skill model table (cached 2026-11-03). Verify on the provider pricing page before any decision.",
+  "batchDiscount": 0.5,
+  "batchSource": "Anthropic Message Batches run at 50% of standard price.",
+  "models": {
+    "large": {
+      "refModel": "claude-opus-5-5",
+      "inputPerMTok": 4.0,
+      "outputPerMTok": 20.0,
+      "cacheReadPerMTok": 0.2,
+      "cacheWritePerMTok": 5.0,
+      "notes": ["cacheWritePerMTok assumed 1.25x input (5-minute cache write); not in the cached source"]
+    },
+    "medium": {
+      "refModel": "claude-sonnet-5-5",
+      "inputPerMTok": 2.0,
+      "outputPerMTok": 10.0,
+      "cacheReadPerMTok": 0.1,
+      "cacheWritePerMTok": 2.5,
+      "notes": ["cacheWritePerMTok assumed 1.25x input"]
+    },
+    "small": {
+      "refModel": "claude-haiku-5-5",
+      "inputPerMTok": 0.1,
+      "outputPerMTok": 0.5,
+      "cacheReadPerMTok": 0.01,
+      "cacheWritePerMTok": 0.125,
+      "notes": ["price shown is for prompts up to 100K tokens", "cacheReadPerMTok assumed 10% of input", "cacheWritePerMTok assumed 1.25x input"]
+    }
+  },
+  "qualityNote": "Model quality in this demo comes from a simulator (platform/llm/sim-llm.mjs). It says nothing about the real referenced models."
+}

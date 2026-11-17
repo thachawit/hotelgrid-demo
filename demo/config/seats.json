@@ -1,0 +1,10 @@
+{
+  "note": "Seat counts and prices are EXAMPLES. Replace monthlyPrice with your invoice amounts. Self-hosted infra (Langfuse etc.) comes from the cloud billing export, not from this file.",
+  "seats": [
+    { "tool": "Claude Code (team seats)", "category": "coding-agent", "team": "engineering", "seats": 14, "active30d": 10, "monthlyPrice": 60, "priceSource": "EXAMPLE - replace with invoice" },
+    { "tool": "Cursor", "category": "ide-assistant", "team": "engineering", "seats": 8, "active30d": 5, "monthlyPrice": 40, "priceSource": "EXAMPLE - replace with invoice" },
+    { "tool": "GitHub Copilot", "category": "ide-assistant", "team": "engineering", "seats": 18, "active30d": 7, "monthlyPrice": 19, "priceSource": "EXAMPLE - replace with invoice" },
+    { "tool": "cubic (AI PR review)", "category": "ai-review", "team": "engineering", "seats": 18, "active30d": 16, "monthlyPrice": 30, "priceSource": "EXAMPLE - replace with invoice" },
+    { "tool": "CodeRabbit (AI PR review)", "category": "ai-review", "team": "engineering", "seats": 18, "active30d": 4, "monthlyPrice": 24, "priceSource": "EXAMPLE - replace with invoice" }
+  ]
+}

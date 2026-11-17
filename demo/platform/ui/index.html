@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HotelGrid Dark Factory</title>
+<link rel="stylesheet" href="/ui/styles.css">
+</head>
+<body>
+<div class="top">
+  <div class="brand"><h1>HotelGrid · Dark Factory</h1><span>fictional hotel platform · live local demo</span></div>
+  <div class="pills" id="pills"></div>
+  <div class="actions">
+    <button class="btn primary" data-run="s1" title="Guest AC complaints become a shipped fix">S1 Self-heal</button>
+    <button class="btn primary" data-run="s2" title="Release train with a contract change hits the pilot hotel">S2 Bad release</button>
+    <button class="btn primary" data-run="s3" title="Advisor, shadow eval, swap proposal, canary">S3 Cost review</button>
+    <button class="btn primary" data-run="s4" title="Reconcile the provider bill with the ledger; find unrouted spend; budgets">S4 Bill &amp; budgets</button>
+    <button class="btn" id="retry-r2" title="Re-run release r2 after the contract fix">Retry r2</button>
+    <button class="btn danger" data-run="s3-bad" title="Force the small tier through the route canary to watch auto-revert">Force bad canary</button>
+  </div>
+</div>
+<nav class="tabs" id="tabs">
+  <button data-tab="overview" class="on">Overview</button>
+  <button data-tab="factory">Factory<span class="count" id="c-factory"></span></button>
+  <button data-tab="fleet">Fleet</button>
+  <button data-tab="incidents">Incidents<span class="count" id="c-incidents"></span></button>
+  <button data-tab="cost">AI Cost</button>
+  <button data-tab="finops">Bill &amp; budgets<span class="count" id="c-finops"></span></button>
+  <button data-tab="diagrams">Diagrams</button>
+  <button data-tab="about">What's real</button>
+</nav>
+<main>
+  <section id="tab-overview"></section>
+  <section id="tab-factory" class="hidden"></section>
+  <section id="tab-fleet" class="hidden"></section>
+  <section id="tab-incidents" class="hidden"></section>
+  <section id="tab-cost" class="hidden"></section>
+  <section id="tab-finops" class="hidden"></section>
+  <section id="tab-diagrams" class="hidden"></section>
+  <section id="tab-about" class="hidden"></section>
+</main>
+<div class="tip hidden" id="tip"></div>
+<script type="module" src="/ui/app.js"></script>
+</body>
+</html>

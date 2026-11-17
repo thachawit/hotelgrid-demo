@@ -1,0 +1,27 @@
+{
+  "goals": [
+    { "id": "guest-comfort", "statement": "Guests get the temperature they ask for within 2 minutes", "kpi": "setpoint_mismatch_rate < 2%", "owner": "team-energy" },
+    { "id": "energy-cost", "statement": "Respect peak-tariff contract for unoccupied rooms", "kpi": "vacant pre-cool during peak = 0", "owner": "team-energy" },
+    { "id": "assistant-quality", "statement": "Guest assistant understands EN and TH equally well", "kpi": "intent accuracy >= 95% overall and on Thai slice", "owner": "team-guest-ai" },
+    { "id": "reliability", "statement": "Guest-facing APIs stay up", "kpi": "edge 5xx < 1%", "owner": "team-platform" },
+    { "id": "ai-unit-cost", "statement": "AI cost per outcome falls quarter over quarter", "kpi": "cost per resolved signal, cost per 1k chats", "owner": "team-finops" }
+  ],
+  "owners": {
+    "api-gateway": "team-platform",
+    "rooms-svc": "team-pms",
+    "hvac-optimizer": "team-energy",
+    "guest-assistant": "team-guest-ai",
+    "feedback-intake": "team-platform"
+  },
+  "approvalLevels": {
+    "L1": { "who": "auto", "examples": "copy/translation fixes, flag off, rollback, config toggles", "agentMayBuild": true, "humans": 0 },
+    "L2": { "who": "one engineer approves", "examples": "UI bugs, validation, prompt changes, small logic fixes", "agentMayBuild": true, "humans": 1 },
+    "L3": { "who": "service owner approves + longer pilot bake", "examples": "business logic, contracts, model/tool swaps", "agentMayBuild": true, "humans": 1, "extraBakeSec": 10 },
+    "L4": { "who": "human-written only", "examples": "auth, payments, secrets, data migrations, safety controls", "agentMayBuild": false, "humans": 2 }
+  },
+  "policy": {
+    "maxDiffLines": 40,
+    "secretPatterns": ["AKIA[0-9A-Z]{16}", "sk-[A-Za-z0-9_-]{20,}", "-----BEGIN [A-Z ]*PRIVATE KEY-----", "(?i)password\\s*[:=]\\s*['\"][^'\"]+['\"]"],
+    "forbiddenInVersionFiles": ["child_process", "eval\\(", "process\\.env"]
+  }
+}

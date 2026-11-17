@@ -1,0 +1,7 @@
+{"id":"hv-001","site":{"peakNow":false},"room":{"occupancy":"occupied"},"requested":22,"expect":22}
+{"id":"hv-002","site":{"peakNow":false},"room":{"occupancy":"vacant"},"requested":20,"expect":20}
+{"id":"hv-004","site":{"peakNow":true},"room":{"occupancy":"vacant"},"requested":26,"expect":26}
+{"id":"hv-005","site":{"peakNow":false},"room":{"occupancy":"occupied"},"requested":12,"expect":18}
+{"id":"hv-006","site":{"peakNow":false},"room":{"occupancy":"occupied"},"requested":31,"expect":28}
+{"id":"hv-007","site":{"peakNow":false},"room":{"occupancy":"occupied"},"requested":22.3,"expect":22.5}
+{"id":"hv-008","site":{"peakNow":true},"room":{"occupancy":"occupied"},"requested":26,"expect":26}

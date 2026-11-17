@@ -1,0 +1,62 @@
+{"id":"ai-001","lang":"en","text":"Please set my room to 21 degrees","expect":{"intent":"set_temperature","temperature":21}}
+{"id":"ai-002","lang":"en","text":"Please set my room to 23.5 degrees","expect":{"intent":"set_temperature","temperature":23.5}}
+{"id":"ai-003","lang":"en","text":"Please set my room to 26 degrees","expect":{"intent":"set_temperature","temperature":26}}
+{"id":"ai-004","lang":"en","text":"Can you make it 21°C?","expect":{"intent":"set_temperature","temperature":21}}
+{"id":"ai-005","lang":"en","text":"Can you make it 23.5°C?","expect":{"intent":"set_temperature","temperature":23.5}}
+{"id":"ai-006","lang":"en","text":"Can you make it 26°C?","expect":{"intent":"set_temperature","temperature":26}}
+{"id":"ai-007","lang":"en","text":"It's too hot, change the AC to 21","expect":{"intent":"set_temperature","temperature":21}}
+{"id":"ai-008","lang":"en","text":"It's too hot, change the AC to 23.5","expect":{"intent":"set_temperature","temperature":23.5}}
+{"id":"ai-009","lang":"en","text":"It's too hot, change the AC to 26","expect":{"intent":"set_temperature","temperature":26}}
+{"id":"ai-010","lang":"en","text":"Set temperature 21 please","expect":{"intent":"set_temperature","temperature":21}}
+{"id":"ai-011","lang":"en","text":"Set temperature 23.5 please","expect":{"intent":"set_temperature","temperature":23.5}}
+{"id":"ai-012","lang":"en","text":"Set temperature 26 please","expect":{"intent":"set_temperature","temperature":26}}
+{"id":"ai-013","lang":"en","text":"I'd like the room at 21 degrees","expect":{"intent":"set_temperature","temperature":21}}
+{"id":"ai-014","lang":"en","text":"I'd like the room at 23.5 degrees","expect":{"intent":"set_temperature","temperature":23.5}}
+{"id":"ai-015","lang":"en","text":"I'd like the room at 26 degrees","expect":{"intent":"set_temperature","temperature":26}}
+{"id":"ai-016","lang":"th","text":"ช่วยตั้งแอร์ 21 องศาค่ะ","expect":{"intent":"set_temperature","temperature":21}}
+{"id":"ai-017","lang":"th","text":"ช่วยตั้งแอร์ 23.5 องศาค่ะ","expect":{"intent":"set_temperature","temperature":23.5}}
+{"id":"ai-018","lang":"th","text":"ช่วยตั้งแอร์ 26 องศาค่ะ","expect":{"intent":"set_temperature","temperature":26}}
+{"id":"ai-019","lang":"th","text":"ปรับแอร์เป็น 21 องศาให้หน่อยครับ","expect":{"intent":"set_temperature","temperature":21}}
+{"id":"ai-020","lang":"th","text":"ปรับแอร์เป็น 23.5 องศาให้หน่อยครับ","expect":{"intent":"set_temperature","temperature":23.5}}
+{"id":"ai-021","lang":"th","text":"ปรับแอร์เป็น 26 องศาให้หน่อยครับ","expect":{"intent":"set_temperature","temperature":26}}
+{"id":"ai-022","lang":"th","text":"ร้อนมาก ขอแอร์ 21 องศา","expect":{"intent":"set_temperature","temperature":21}}
+{"id":"ai-023","lang":"th","text":"ร้อนมาก ขอแอร์ 23.5 องศา","expect":{"intent":"set_temperature","temperature":23.5}}
+{"id":"ai-024","lang":"th","text":"ร้อนมาก ขอแอร์ 26 องศา","expect":{"intent":"set_temperature","temperature":26}}
+{"id":"ai-025","lang":"th","text":"ตั้งอุณหภูมิห้อง 21 องศาได้ไหมคะ","expect":{"intent":"set_temperature","temperature":21}}
+{"id":"ai-026","lang":"th","text":"ตั้งอุณหภูมิห้อง 23.5 องศาได้ไหมคะ","expect":{"intent":"set_temperature","temperature":23.5}}
+{"id":"ai-027","lang":"th","text":"ตั้งอุณหภูมิห้อง 26 องศาได้ไหมคะ","expect":{"intent":"set_temperature","temperature":26}}
+{"id":"ai-028","lang":"th","text":"ขอปรับอุณหภูมิเป็น 21 องศานะครับ","expect":{"intent":"set_temperature","temperature":21}}
+{"id":"ai-029","lang":"th","text":"ขอปรับอุณหภูมิเป็น 23.5 องศานะครับ","expect":{"intent":"set_temperature","temperature":23.5}}
+{"id":"ai-030","lang":"th","text":"ขอปรับอุณหภูมิเป็น 26 องศานะครับ","expect":{"intent":"set_temperature","temperature":26}}
+{"id":"ai-031","lang":"en","text":"What's the temperature in my room right now?","expect":{"intent":"room_status","temperature":null}}
+{"id":"ai-032","lang":"en","text":"Is my AC on?","expect":{"intent":"room_status","temperature":null}}
+{"id":"ai-033","lang":"en","text":"What is the room temperature?","expect":{"intent":"room_status","temperature":null}}
+{"id":"ai-034","lang":"en","text":"How warm is it in here at the moment?","expect":{"intent":"room_status","temperature":null}}
+{"id":"ai-035","lang":"th","text":"ตอนนี้ห้องกี่องศาคะ","expect":{"intent":"room_status","temperature":null}}
+{"id":"ai-036","lang":"th","text":"แอร์เปิดอยู่ไหมครับ","expect":{"intent":"room_status","temperature":null}}
+{"id":"ai-037","lang":"th","text":"อุณหภูมิในห้องตอนนี้เท่าไหร่คะ","expect":{"intent":"room_status","temperature":null}}
+{"id":"ai-038","lang":"th","text":"เช็คอุณหภูมิห้องให้หน่อยครับ","expect":{"intent":"room_status","temperature":null}}
+{"id":"ai-039","lang":"en","text":"Can I get two extra towels?","expect":{"intent":"request_service","temperature":null}}
+{"id":"ai-040","lang":"en","text":"Please send housekeeping","expect":{"intent":"request_service","temperature":null}}
+{"id":"ai-041","lang":"en","text":"I need more pillows","expect":{"intent":"request_service","temperature":null}}
+{"id":"ai-042","lang":"en","text":"Could someone bring drinking water?","expect":{"intent":"request_service","temperature":null}}
+{"id":"ai-043","lang":"th","text":"ขอผ้าเช็ดตัวเพิ่มสองผืนค่ะ","expect":{"intent":"request_service","temperature":null}}
+{"id":"ai-044","lang":"th","text":"ช่วยส่งแม่บ้านมาทำความสะอาดห้องหน่อย","expect":{"intent":"request_service","temperature":null}}
+{"id":"ai-045","lang":"th","text":"ขอหมอนเพิ่มครับ","expect":{"intent":"request_service","temperature":null}}
+{"id":"ai-046","lang":"th","text":"ขอน้ำดื่มเพิ่มค่ะ","expect":{"intent":"request_service","temperature":null}}
+{"id":"ai-047","lang":"en","text":"The AC is not working at all","expect":{"intent":"complaint","temperature":null}}
+{"id":"ai-048","lang":"en","text":"This is the third time the aircon ignored me","expect":{"intent":"complaint","temperature":null}}
+{"id":"ai-049","lang":"en","text":"Room is still hot after an hour, very disappointed","expect":{"intent":"complaint","temperature":null}}
+{"id":"ai-050","lang":"en","text":"Noise from the next room all night","expect":{"intent":"complaint","temperature":null}}
+{"id":"ai-051","lang":"th","text":"แอร์ไม่เย็นเลย ตั้ง 22 แต่ยังขึ้น 25","expect":{"intent":"complaint","temperature":null}}
+{"id":"ai-052","lang":"th","text":"แอร์เสียค่ะ ไม่ทำงานเลย","expect":{"intent":"complaint","temperature":null}}
+{"id":"ai-053","lang":"th","text":"ห้องข้างๆเสียงดังทั้งคืน","expect":{"intent":"complaint","temperature":null}}
+{"id":"ai-054","lang":"th","text":"รอแม่บ้านนานมาก ไม่พอใจ","expect":{"intent":"complaint","temperature":null}}
+{"id":"ai-055","lang":"en","text":"What time is breakfast?","expect":{"intent":"other","temperature":null}}
+{"id":"ai-056","lang":"en","text":"Where is the pool?","expect":{"intent":"other","temperature":null}}
+{"id":"ai-057","lang":"en","text":"Do you have an airport transfer?","expect":{"intent":"other","temperature":null}}
+{"id":"ai-058","lang":"en","text":"What's the wifi password?","expect":{"intent":"other","temperature":null}}
+{"id":"ai-059","lang":"th","text":"อาหารเช้ากี่โมงคะ","expect":{"intent":"other","temperature":null}}
+{"id":"ai-060","lang":"th","text":"สระว่ายน้ำอยู่ชั้นไหน","expect":{"intent":"other","temperature":null}}
+{"id":"ai-061","lang":"th","text":"มีรถรับส่งสนามบินไหมครับ","expect":{"intent":"other","temperature":null}}
+{"id":"ai-062","lang":"th","text":"รหัสไวไฟคืออะไรครับ","expect":{"intent":"other","temperature":null}}

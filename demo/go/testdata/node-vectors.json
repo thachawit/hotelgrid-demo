@@ -1,0 +1,130 @@
+{
+  "markdown": {
+    "input": "# INC-1 — 2026.11-r2 rolled back at bkk-pilot\n\n**Status:** mitigated · **Release:** REL-2 (rooms-svc@2.4.0, guest-assistant@3.1.0) · **Deploy freeze:** on\n\n## Summary\nCanary analysis tripped in 7s; reverted guest-assistant then rooms-svc (consumers first) & <checked>.\n\n| Candidate | Changed | Score | Evidence |\n|---|---|---|---|\n| rooms-svc@2.4.0 | yes | **0.95** | release note says `occupancy` changed; errors mention \"occupancy\" |\n| hvac-optimizer | no | **0.35** | not changed in this release |\n\n> LINE · room 1204: แอร์ไม่เย็น ตั้ง 22 แต่ยังขึ้น 25\n\n- 10:00:01 Deploy freeze on — no new rollouts\n  - nested item with [a link](https://example.invalid/x)\n1. Fix task: make hvac-optimizer accept the `occupancyStatus` contract.\n2. Turn on the **manifest parity gate**.\n\n```\nGET /v1/organizations/cost_report?group_by[]=workspace_id <raw>\n```\n#### Small heading\nplain paragraph with **bold** and `code`\n",
+    "html": "<h1>INC-1 — 2026.11-r2 rolled back at bkk-pilot</h1>\n<p><strong>Status:</strong> mitigated · <strong>Release:</strong> REL-2 (rooms-svc@2.4.0, guest-assistant@3.1.0) · <strong>Deploy freeze:</strong> on</p>\n<h2>Summary</h2>\n<p>Canary analysis tripped in 7s; reverted guest-assistant then rooms-svc (consumers first) &amp; &lt;checked&gt;.</p>\n<div class=\"table-wrap\"><table><thead><tr><th>Candidate</th><th>Changed</th><th>Score</th><th>Evidence</th></tr></thead><tbody><tr><td>rooms-svc@2.4.0</td><td>yes</td><td><strong>0.95</strong></td><td>release note says <code>occupancy</code> changed; errors mention \"occupancy\"</td></tr><tr><td>hvac-optimizer</td><td>no</td><td><strong>0.35</strong></td><td>not changed in this release</td></tr></tbody></table></div>\n<blockquote>LINE · room 1204: แอร์ไม่เย็น ตั้ง 22 แต่ยังขึ้น 25</blockquote>\n<ul><li>10:00:01 Deploy freeze on — no new rollouts</li><li>nested item with <a href=\"https://example.invalid/x\">a link</a></li></ul>\n<ol><li>Fix task: make hvac-optimizer accept the <code>occupancyStatus</code> contract.</li><li>Turn on the <strong>manifest parity gate</strong>.</li></ol>\n<pre><code>GET /v1/organizations/cost_report?group_by[]=workspace_id &lt;raw&gt;</code></pre>\n<h4>Small heading</h4>\n<p>plain paragraph with <strong>bold</strong> and <code>code</code></p>"
+  },
+  "percentile": [
+    {
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        100
+      ],
+      "p": 80,
+      "out": 4
+    },
+    {
+      "values": [
+        5
+      ],
+      "p": 95,
+      "out": 5
+    },
+    {
+      "values": [],
+      "p": 95,
+      "out": 0
+    },
+    {
+      "values": [
+        3,
+        1,
+        2,
+        9,
+        7,
+        7,
+        4,
+        8,
+        6,
+        5
+      ],
+      "p": 95,
+      "out": 9
+    },
+    {
+      "values": [
+        0.5,
+        12.25,
+        3.75
+      ],
+      "p": 50,
+      "out": 3.75
+    }
+  ],
+  "twoPropZ": [
+    {
+      "in": [
+        2,
+        400,
+        30,
+        120
+      ],
+      "z": 9.794978221550863
+    },
+    {
+      "in": [
+        4,
+        400,
+        1,
+        100
+      ],
+      "z": 0
+    },
+    {
+      "in": [
+        0,
+        50,
+        0,
+        50
+      ],
+      "z": 0
+    },
+    {
+      "in": [
+        0,
+        50,
+        3,
+        20
+      ],
+      "z": 2.799253631867321
+    },
+    {
+      "in": [
+        0,
+        0,
+        1,
+        10
+      ],
+      "z": 0
+    }
+  ],
+  "mulberry32": {
+    "seed": 42,
+    "out": [
+      0.6011037519201636,
+      0.44829055899754167,
+      0.8524657934904099,
+      0.6697340414393693,
+      0.17481389874592423,
+      0.5265925421845168,
+      0.2732279943302274,
+      0.6247446539346129
+    ]
+  },
+  "hash01": [
+    {
+      "in": "abc|assistant.intent",
+      "out": 0.954103515483439
+    },
+    {
+      "in": "t-123|factory.build",
+      "out": 0.6133357628714293
+    },
+    {
+      "in": "",
+      "out": 0.8524420219473541
+    }
+  ]
+}

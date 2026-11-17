@@ -1,0 +1,63 @@
+{
+  "note": "HotelGrid is a fictional company. Ports are local only.",
+  "accel": 12,
+  "accelNote": "Demo traffic runs ~12x faster than modeled production. The cost ledger weights live rows by 1/accel so per-day numbers match the production model.",
+  "ports": {
+    "control-plane": 4000,
+    "api-gateway": 4001,
+    "rooms-svc": 4002,
+    "hvac-optimizer": 4003,
+    "guest-assistant": 4004,
+    "feedback-intake": 4005,
+    "llm-gateway": 4100,
+    "sim-llm": 4200,
+    "release-controller": 4300,
+    "finops": 4400,
+    "claude-adapter": 4210
+  },
+  "services": {
+    "api-gateway": {
+      "owner": "team-platform",
+      "deps": [
+        "rooms-svc",
+        "hvac-optimizer",
+        "guest-assistant"
+      ],
+      "tier": "edge"
+    },
+    "rooms-svc": {
+      "owner": "team-pms",
+      "deps": [],
+      "tier": "core"
+    },
+    "hvac-optimizer": {
+      "owner": "team-energy",
+      "deps": [
+        "rooms-svc"
+      ],
+      "tier": "core"
+    },
+    "guest-assistant": {
+      "owner": "team-guest-ai",
+      "deps": [
+        "rooms-svc",
+        "hvac-optimizer",
+        "llm-gateway",
+        "feedback-intake"
+      ],
+      "tier": "ai"
+    },
+    "feedback-intake": {
+      "owner": "team-platform",
+      "deps": [],
+      "tier": "intake"
+    }
+  },
+  "initialManifest": {
+    "api-gateway": "5.2.0",
+    "rooms-svc": "2.3.1",
+    "hvac-optimizer": "1.8.0",
+    "guest-assistant": "3.0.2",
+    "feedback-intake": "1.4.0"
+  }
+}

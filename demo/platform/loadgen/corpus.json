@@ -1,0 +1,254 @@
+{
+  "note": "Labeled guest messages (EN + TH) used by the Go loadgen and scripts/build-golden.mjs. {t} = temperature; complaint templates use {room} {req} {eff}; staff messages use {floor}.",
+  "chatTemplates": [
+    {
+      "intent": "set_temperature",
+      "lang": "en",
+      "text": "Please set my room to {t} degrees"
+    },
+    {
+      "intent": "set_temperature",
+      "lang": "en",
+      "text": "Can you make it {t}°C?"
+    },
+    {
+      "intent": "set_temperature",
+      "lang": "en",
+      "text": "It's too hot, change the AC to {t}"
+    },
+    {
+      "intent": "set_temperature",
+      "lang": "en",
+      "text": "Set temperature {t} please"
+    },
+    {
+      "intent": "set_temperature",
+      "lang": "en",
+      "text": "I'd like the room at {t} degrees"
+    },
+    {
+      "intent": "set_temperature",
+      "lang": "th",
+      "text": "ช่วยตั้งแอร์ {t} องศาค่ะ"
+    },
+    {
+      "intent": "set_temperature",
+      "lang": "th",
+      "text": "ปรับแอร์เป็น {t} องศาให้หน่อยครับ"
+    },
+    {
+      "intent": "set_temperature",
+      "lang": "th",
+      "text": "ร้อนมาก ขอแอร์ {t} องศา"
+    },
+    {
+      "intent": "set_temperature",
+      "lang": "th",
+      "text": "ตั้งอุณหภูมิห้อง {t} องศาได้ไหมคะ"
+    },
+    {
+      "intent": "set_temperature",
+      "lang": "th",
+      "text": "ขอปรับอุณหภูมิเป็น {t} องศานะครับ"
+    },
+    {
+      "intent": "room_status",
+      "lang": "en",
+      "text": "What's the temperature in my room right now?"
+    },
+    {
+      "intent": "room_status",
+      "lang": "en",
+      "text": "Is my AC on?"
+    },
+    {
+      "intent": "room_status",
+      "lang": "en",
+      "text": "What is the room temperature?"
+    },
+    {
+      "intent": "room_status",
+      "lang": "en",
+      "text": "How warm is it in here at the moment?"
+    },
+    {
+      "intent": "room_status",
+      "lang": "th",
+      "text": "ตอนนี้ห้องกี่องศาคะ"
+    },
+    {
+      "intent": "room_status",
+      "lang": "th",
+      "text": "แอร์เปิดอยู่ไหมครับ"
+    },
+    {
+      "intent": "room_status",
+      "lang": "th",
+      "text": "อุณหภูมิในห้องตอนนี้เท่าไหร่คะ"
+    },
+    {
+      "intent": "room_status",
+      "lang": "th",
+      "text": "เช็คอุณหภูมิห้องให้หน่อยครับ"
+    },
+    {
+      "intent": "request_service",
+      "lang": "en",
+      "text": "Can I get two extra towels?"
+    },
+    {
+      "intent": "request_service",
+      "lang": "en",
+      "text": "Please send housekeeping"
+    },
+    {
+      "intent": "request_service",
+      "lang": "en",
+      "text": "I need more pillows"
+    },
+    {
+      "intent": "request_service",
+      "lang": "en",
+      "text": "Could someone bring drinking water?"
+    },
+    {
+      "intent": "request_service",
+      "lang": "th",
+      "text": "ขอผ้าเช็ดตัวเพิ่มสองผืนค่ะ"
+    },
+    {
+      "intent": "request_service",
+      "lang": "th",
+      "text": "ช่วยส่งแม่บ้านมาทำความสะอาดห้องหน่อย"
+    },
+    {
+      "intent": "request_service",
+      "lang": "th",
+      "text": "ขอหมอนเพิ่มครับ"
+    },
+    {
+      "intent": "request_service",
+      "lang": "th",
+      "text": "ขอน้ำดื่มเพิ่มค่ะ"
+    },
+    {
+      "intent": "complaint",
+      "lang": "en",
+      "text": "The AC is not working at all"
+    },
+    {
+      "intent": "complaint",
+      "lang": "en",
+      "text": "This is the third time the aircon ignored me"
+    },
+    {
+      "intent": "complaint",
+      "lang": "en",
+      "text": "Room is still hot after an hour, very disappointed"
+    },
+    {
+      "intent": "complaint",
+      "lang": "en",
+      "text": "Noise from the next room all night"
+    },
+    {
+      "intent": "complaint",
+      "lang": "th",
+      "text": "แอร์ไม่เย็นเลย ตั้ง 22 แต่ยังขึ้น 25"
+    },
+    {
+      "intent": "complaint",
+      "lang": "th",
+      "text": "แอร์เสียค่ะ ไม่ทำงานเลย"
+    },
+    {
+      "intent": "complaint",
+      "lang": "th",
+      "text": "ห้องข้างๆเสียงดังทั้งคืน"
+    },
+    {
+      "intent": "complaint",
+      "lang": "th",
+      "text": "รอแม่บ้านนานมาก ไม่พอใจ"
+    },
+    {
+      "intent": "other",
+      "lang": "en",
+      "text": "What time is breakfast?"
+    },
+    {
+      "intent": "other",
+      "lang": "en",
+      "text": "Where is the pool?"
+    },
+    {
+      "intent": "other",
+      "lang": "en",
+      "text": "Do you have an airport transfer?"
+    },
+    {
+      "intent": "other",
+      "lang": "en",
+      "text": "What's the wifi password?"
+    },
+    {
+      "intent": "other",
+      "lang": "th",
+      "text": "อาหารเช้ากี่โมงคะ"
+    },
+    {
+      "intent": "other",
+      "lang": "th",
+      "text": "สระว่ายน้ำอยู่ชั้นไหน"
+    },
+    {
+      "intent": "other",
+      "lang": "th",
+      "text": "มีรถรับส่งสนามบินไหมครับ"
+    },
+    {
+      "intent": "other",
+      "lang": "th",
+      "text": "รหัสไวไฟคืออะไรครับ"
+    }
+  ],
+  "temps": [
+    20,
+    21,
+    22,
+    22.5,
+    23,
+    23.5,
+    24,
+    25,
+    26
+  ],
+  "lineComplaints": {
+    "setpoint": {
+      "th": [
+        "ตั้งแอร์ {req} องศาแต่ห้องยังร้อน ขึ้น {eff} ตลอด ห้อง {room}",
+        "ห้อง {room} สั่งแอร์ {req} แต่ระบบปรับเป็น {eff} เองค่ะ",
+        "แอร์ไม่ยอมลงต่ำกว่า {eff} องศา ห้อง {room} ช่วยดูหน่อยครับ"
+      ],
+      "en": [
+        "Room {room}: I set the AC to {req} but it keeps going back to {eff}",
+        "AC in room {room} ignores me, asked {req}C and it says {eff}C",
+        "Why does my room {room} AC stay at {eff}? I want {req}"
+      ]
+    },
+    "error": {
+      "th": [
+        "แอพสั่งแอร์ไม่ได้ ขึ้น error ห้อง {room}",
+        "ห้อง {room} กดปรับแอร์แล้วระบบค้าง"
+      ],
+      "en": [
+        "App shows an error when I change the temperature, room {room}",
+        "Chat bot says something went wrong, room {room}"
+      ]
+    }
+  },
+  "staffSlack": [
+    "Front desk: several guests on floor {floor} say the AC panel shows an error",
+    "Engineering on-site: hvac commands failing on floor {floor}, guests calling"
+  ]
+}

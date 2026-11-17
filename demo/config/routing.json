@@ -1,0 +1,16 @@
+{
+  "note": "Initial LLM gateway route table. The cost advisor proposes changes; the control plane applies approved ones as canaries. Budgets live in budgets.json.",
+  "routes": {
+    "assistant.intent": { "model": "large", "effort": "high", "team": "team-guest-ai", "capturePrompt": true, "guestFacing": true },
+    "assistant.reply": { "model": "medium", "effort": "medium", "team": "team-guest-ai", "guestFacing": true },
+    "factory.triage": { "model": "large", "effort": "high", "team": "team-platform" },
+    "factory.repro": { "model": "large", "effort": "high", "team": "team-platform" },
+    "factory.build": { "model": "large", "effort": "xhigh", "team": "team-platform" },
+    "factory.review": { "model": "medium", "effort": "high", "team": "team-platform" },
+    "eval.golden": { "model": "large", "effort": "high", "team": "team-platform", "batch": false },
+    "cost.advisor": { "model": "large", "effort": "high", "team": "team-finops" },
+    "cost.shadow": { "model": "large", "effort": "high", "team": "team-finops", "batch": true },
+    "data.review-summaries": { "model": "large", "effort": "high", "team": "team-data", "batch": true }
+  },
+  "providerKey": "apikey_gateway_prod"
+}
